@@ -1,0 +1,60 @@
+Algoritmo El_Ahorro_para_la_Consola_de_Videojuegos
+	Mostrar "Quieres una consola que cuesta $5,000"
+	Mostrar "Tienes ahorrados $3,500"
+	Mostrar "Tus padres te ayudaran si:"
+	Mostrar "Tu calificaciòn en Matemàticas es mayor de 8" 
+	Mostrar "y si completaste las tareas del hogar sin recordartelo"
+	
+	Consola <- 5000
+	Ahorros <- 3500
+	Ayuda <- Consola-Ahorros
+	Necesitas <- Ayuda
+	Bonos <- 250
+	
+	
+	Mostrar "El dinero que necesitas es: ", Necesitas
+	
+	Mostrar "¿Cual es tu calificacion de matematicas?"
+	
+	Leer Calif_mat
+	
+	Si Calif_mat>8 Entonces
+		Mostrar "Cumples esta condicion"
+	SiNo 
+		Mostrar "No cumples esta condicion"
+	FinSi
+	
+	Mostrar "¿Te recordaron tus tareas?"
+	Leer tareas_completas
+	
+	Si tareas_completas es "No" Entonces
+		Mostrar "Cumples esta condicion"
+	SiNo
+		Mostrar "No cumples esta condicion"
+	FinSi
+	
+	Si (Calif_mat>8)  y tareas_completas es "No"  Entonces
+		Mostrar "Recibiras ayuda ademas de un bono de" , Bonos
+	SiNo 
+		Mostrar "No recibiras ayuda" 
+	FinSi
+	
+	Condiciones <- ((Calif_mat>8)  y tareas_completas es "No") 
+	
+	TuDinero <- Ahorros + Ayuda + Bonos
+	
+	Mostrar "Ahora tienes", TuDinero
+	Mostrar "Y costaba" , Consola
+	
+	
+	
+	Si (TuDinero >= Consola)  Entonces
+		Mostrar "Puedes comprar la consola"
+	SiNo
+		Mostrar "No puedes comprar la consola"
+	FinSi
+	
+	
+	
+	
+FinAlgoritmo

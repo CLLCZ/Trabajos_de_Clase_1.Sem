@@ -1,0 +1,26 @@
+Algoritmo Estructura_Condicional
+	
+	Definir calf1 Como Entero
+	Definir calf2 Como Entero
+	Definir calf3 Como Entero
+	Definir prom Como Real
+	Mostrar "Ingressa la calificacion 1: "
+	Leer calf1
+	Mostrar "Ingresa la calificacion 2: "
+	Leer calf2
+	Mostrar "Ingresa la calificacion 3: "
+	Leer calf3
+	
+	prom = (calf1 + calf2 + calf3)/3
+	
+	Mostrar "El promedio es: ", prom 
+	Si (prom >= 60) Entonces
+		Mostrar "¡Felicidades!, pasaste la materia :D"
+		Si (prom >= 95) Entonces
+			Mostrar "¡Eres un muy buen estudiante!"
+		FinSi
+	SiNo
+		Mostrar "¡Oh NO!, no pasaste la materia D:"
+	FinSi
+	
+FinAlgoritmo

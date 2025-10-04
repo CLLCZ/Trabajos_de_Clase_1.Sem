@@ -1,0 +1,39 @@
+Algoritmo puntuaciones_partido
+	Definir cantpartidos Como Entero
+	Definir puntos Como Entero
+	Definir puntosTotales Como Entero
+	Definir mejorPuntuacion, peorPuntuacion Como Entero
+	
+	Mostrar "Ingrese la cantidad de partidos jugados por el equipo en la temporada"
+	Leer cantpartidos
+	Mostrar cantpartidos
+	
+	Dimension puntuaciones[cantpartidos]
+	puntosTotales <- 0
+	mejorPuntuacion <- puntuaciones[1]
+	peorPuntuacion <- puntuaciones[1]
+	Para c<-1 Hasta cantpartidos Con Paso 1 Hacer
+		Mostrar "Ingrese los puntos anotados en los partidos"
+		Mostrar "Partido [",c,"]"
+		Leer puntuaciones[c]
+	FinPara
+	
+	Para c<-1 Hasta cantpartidos Con Paso 1 Hacer
+		Mostrar "Partido [",c,"]" , puntuaciones[c] 
+		puntosTotales <- puntosTotales + puntuaciones[c]
+		mejorPuntuacion <- puntuaciones[c]
+		peorPuntuacion <- puntuaciones[c]
+		Si puntuaciones[c] > mejorPuntuacion
+			mejorPuntuacion <- puntuaciones[c]
+		FinSi
+		si puntuaciones[c] < peorPuntuacion 
+			peorPuntuacion <- puntuaciones[c]
+		FinSi
+	FinPara
+	
+	Mostrar "Total de puntos: " , puntosTotales
+	Mostrar "Promedio de puntos por partido: " , puntosTotales/cantpartidos
+	Mostrar "Mayor puntaje: " , mejorPuntuacion
+	Mostrar "Menor puntaje: " , peorPuntuacion
+	
+FinAlgoritmo

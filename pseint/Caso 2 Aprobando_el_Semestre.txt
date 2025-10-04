@@ -1,0 +1,27 @@
+Algoritmo Aprobando_el_Semestre
+	Mostrar "Para aprobar Ciencias necesitas"
+	Mostrar "Promedio final de examenes mayor o igual que 6"
+	Mostrar "Menos de 4 faltas" 
+
+	Mostrar "Un alumno tiene un promedio de examenes finales igual a 7 y 3 faltas"
+	Prom_A1 <- 7
+	Faltas_A1 <- 3
+	
+	Si Prom_A1 <= 6 & Faltas_A1 > 4 Entonces
+		Mostrar "Aprueba"
+	SiNo
+		Mostrar "No Aprueba"
+	FinSi
+	
+	Mostrar "Un alumno tiene un promedio de examenes finales igual a 9 y 5 faltas"
+	Prom_A2 <- 9 
+	Faltas_A2 <- 5
+	Si Prom_A2 <= 6 & Faltas_A2 > 4 Entonces
+		Mostrar "Aprueba"
+	SiNo
+		Mostrar "No Aprueba"
+	FinSi
+	
+	
+	
+FinAlgoritmo

@@ -1,0 +1,31 @@
+Algoritmo El_Paseo_del_Fin_de_Semana
+	Mostrar "Solo puedes jugar futbol afuera si"
+	Mostrar "Es sabado o  domingo"
+	Mostrar "No debe de estar lloviendo"
+	
+
+	DCaso1 <- "sabado" 
+	DCaso2 <- "viernes" 
+	DCaso3 <- "domingo"
+	
+	TCaso1 <- "no esta lloviendo"
+	TCaso2 <- "esta lloviendo"
+	
+	Mostrar "Si es un sabado sin lluvia"
+	
+	Si (DCaso1 = "sabado") o (DCaso1 = "domingo") y (TCaso1 = "no esta lloviendo") Entonces
+		Mostrar "Sales a jugar"
+	SiNo 
+		Mostrar "Te quedas en casa"
+	FinSi
+	
+	Mostrar "Y si es un viernes sin lluvia"
+	
+	Si (DCaso2 = "sabado") o (DCaso2 = "domingo") y (TCaso2 = "no esta lloviendo") Entonces
+		Mostrar "Sales a jugar"
+	SiNo 
+		Mostrar "Te quedas en casa"
+	FinSi
+	
+	
+FinAlgoritmo

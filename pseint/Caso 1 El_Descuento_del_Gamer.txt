@@ -1,0 +1,17 @@
+Algoritmo El_Descuento_del_Gamer
+	Mostrar "Su juego cuesta $800"
+	J1 <- 800
+	Mostrar "Se te aplicara un descuento de $75"
+	Definir descuento Como Real
+	descuento = 75
+	Mostrar "Pero solo llevas $700"
+	Si J1-descuento <= 700 Entonces 
+		Mostrar "Es suficiente"
+	SiNo 
+		Mostrar "No es suficiente"
+	FinSi
+	
+	
+	
+	
+FinAlgoritmo
